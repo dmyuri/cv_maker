@@ -1,15 +1,7 @@
-import { title } from "process";
-import CardForm from "./CardForm";
-import Input from "./Input";
-import StepProgress from "./StepProgress";
+import StepProgress from '../StepProgress/StepProgress';
+import './Card.css';
 
-interface CardProps {
-    title: string;
-    inputs: React.ReactNode;
-    buttons?: React.ReactNode;
-}
-
-export default function Card({ title, inputs, buttons }: CardProps) {
+export default function Card({ children }: { children: React.ReactNode }) {
     return (
         <div className="card">
             <div className="card-content">
@@ -24,12 +16,7 @@ export default function Card({ title, inputs, buttons }: CardProps) {
                         currentStep={0}
                     />
                 </div>
-                <CardForm 
-                    title={title}
-                    inputs={inputs}
-                    buttons={buttons}
-                    isActive
-                />
+                {children}
             </div>
         </div>
     );

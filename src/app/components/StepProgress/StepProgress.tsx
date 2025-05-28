@@ -1,4 +1,4 @@
-import '../styles/StepProgress.css';
+import './StepProgress.css';
 
 interface Step {
   title: string;

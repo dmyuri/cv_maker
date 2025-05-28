@@ -29,46 +29,10 @@ a {
   text-decoration: none;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px;
+  height: 100%;
   gap: 20px;
-}
-
-.app-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.app-name {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.btn-container {
-  display: flex;
-  gap: 10px;
-}
-
-.btn {
-  padding: 15px 30px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-create {
-  background-color: #4caf50;
-  color: #fff;
 }
