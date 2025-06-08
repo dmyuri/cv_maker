@@ -17,3 +17,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.form {
+  @apply flex flex-col gap-6 py-3;
+}
+
+.form-title {
+  @apply text-2xl font-bold mb-5;
+}
+
+.input-grid {
+  @apply grid grid-cols-2 gap-6;
+}
+
+.card-form {
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 28px;
+  min-height: 100vh;
+}
+
+.add-btn {
+  cursor: pointer;
+  padding: 5px;
+  color: #1170CD;
+  font-weight: bold;
+  width: 100%;
+  text-align: start;
+}
+
+.add-btn:hover {
+  background-color: #F4FAFF;
+}
