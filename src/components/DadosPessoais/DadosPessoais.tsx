@@ -2,8 +2,8 @@ import Input from "../Input/Input";
 
 export default function DadosPessoais() {
     return (
-        <div>
-            <h1 className="form-title">Dados Pessoais</h1>
+        <div className="form">
+            <h1 className="text-2xl font-bold">Dados Pessoais</h1>
             <div className="input-grid">
                 <Input data={{
                     label: "Nome completo",
@@ -40,7 +40,17 @@ export default function DadosPessoais() {
                     name: "portfolio",
                     placeholder: "meuportfolio.com.br",
                 }}/>
+                <Input data={{
+                    label: "Nacionalidade",
+                    name: "nacionalidade",
+                    placeholder: "Brasileira",
+                }}/>
             </div>
+            <Input data={{
+                label: "Endereço",
+                name: "endereco",
+            }}
+            />
         </div>
     );
 }
